@@ -1,0 +1,15 @@
+<h1>Fill out the form to find the weather forcast!</h1>
+
+<form action="/save/{{.Title}}" method="POST">
+<div>
+Street Address:<br>
+<input type="text" name="address">{{printf "%s" .Body}}<br>
+City:<br>
+<input type="text" name="city">{{printf "%s" .Body}}<br>
+State:<br>
+<input type="text" name="state">{{printf "%s" .Body}}<br>
+Zip Code:<br>
+<input type="text" name="zip">{{printf "%s" .Body}}<br>
+</div>
+<div><input type="submit" value="Save"></div>
+</form>
